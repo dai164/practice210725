@@ -97,7 +97,6 @@ header img {
 
 .sub-title {
   padding: 0 0 20px 0;
-
 }
 
 .sub-title, .time {
@@ -333,4 +332,120 @@ footer h4 {
   text-align: center;
   border-top: solid 2px #6CC6C4;
   padding: 20px 0;
+}
+
+/*  */
+
+@media(max-width: 599px) {
+  header {
+    width: 100%;
+    height: auto;
+    /* margin: 0 auto; */
+    text-align: center;
+    /* display: flex;
+    flex-direction: column; */
+  }
+  header img {
+    padding: 0 ;
+  }
+  .header-right {
+    /* text-align: center; */
+    color: #515151;
+    margin: 0 auto;
+    position: static;
+    height: auto;
+  }
+  .sub-title {
+    padding-top: 5px;
+    padding-bottom: 15px;
+  }
+  .time {
+    margin-bottom: 10px;
+  }
+  .top-menu {
+    width: 100%;
+    height: auto;
+    border: none;
+  }
+  .top-menu ul {
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: #F6F6F6;
+    background-image: none;
+  }
+  .top-menu li {
+    /* flex: auto; */
+    box-sizing: border-box;
+    width: 50%;
+    background-image: linear-gradient(rgb(156,227,225) 0%,rgb(108,198,196) 100%);
+    border-radius: 6px;
+    border: solid 1px #6CC6C4;
+  }
+  .center {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 3%;
+    height: auto;
+    flex-direction: column;
+  }
+  .side-menu {
+    order: 1;
+  }
+  .side-menu, .main, .information {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+  .side-menu1, .side-menu2, footer {
+    width: 100%;
+    height: auto;
+  }
+  .side-menu1 ul, .side-menu2 ul {
+    margin-bottom: 20px;
+  }
+  .side-menu1 li, .side-menu2 li {
+    width: 85%;
+  }
+  .main-image img {
+    width: 100%;
+  }
+  .information ul {
+    margin-right: 20px;
+   }
+  .information li {
+    width: 100%;
+  }
+  .information span {
+    float: none;
+    height: auto;
+    margin-bottom: 25px;
+  }
+  .information p {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 10px;    
+  }
+  .footer-menu {
+    box-sizing: border-box;
+    width: 94%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  .footer-menu ul {
+    flex-wrap: wrap;
+  }
+  footer h3 {
+    padding-right: 3%;
+    line-height: 25px;
+    padding-bottom: 0;
+  }
+}
+
+/* 599以上の時は改行をキャンセル */
+@media screen and (min-width: 599px){	
+  .br-sp { 
+    display:none;
+  }
 }
